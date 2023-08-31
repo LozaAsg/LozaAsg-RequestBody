@@ -43,7 +43,7 @@ public class JavalinSingleton {
             String jsonString=ctx.body();
             Song song = om.readValue(jsonString, Song.class);
 
-            song.setArtistName("Beatles");
+            song.setArtistName("Beatles ");
             ctx.json(song);
                
         });
